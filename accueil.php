@@ -371,58 +371,70 @@
 <!-- BANDEAU TICKER -->
 <div class="bandeau-events">
     <div class="ticker">
-        🗓️ Prochaine brocante : 14 Juin 2026 — Place du village &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        🗓️ Prochaine brocante : 4 Juin 2026 — Place du village &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        📞 Nous contacter : 07 x xx xx x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
     </div>
 </div>
 
 <!-- ACTIVITÉS -->
 <section class="py-5" id="activites">
-    <div class="container py-3">
-        <div class="text-center mb-5">
-            <span class="section-title">Nos Activités</span>
-            <p class="text-muted" style="max-width:560px; margin:0 auto;">Découvrez tout ce que l'association propose tout au long de l'année.</p>
-        </div>
-        <div class="row g-4">
-            <div class="col-sm-6 col-lg-3">
-                <div class="card-activite">
-                    <div class="card-icon">🏺</div>
-                    <div class="card-body">
-                        <h5>Brocantes & Vide-greniers</h5>
-                        <p>Plusieurs fois par an, exposants et visiteurs se retrouvent pour chiner, vendre et découvrir.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="card-activite">
-                    <div class="card-icon">☕</div>
-                    <div class="card-body">
-                        <h5>Cafés Rencontres</h5>
-                        <p>Un moment convivial mensuel pour échanger, tisser des liens et partager autour d'un café.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="card-activite">
-                    <div class="card-icon">🌿</div>
-                    <div class="card-body">
-                        <h5>Marchés Locaux</h5>
-                        <p>Producteurs et artisans locaux réunis pour promouvoir les savoirs-faire de la région.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="card-activite">
-                    <div class="card-icon">🎨</div>
-                    <div class="card-body">
-                        <h5>Ateliers Créatifs</h5>
-                        <p>Peinture, couture, jardinage… des ateliers pour tous les âges et toutes les envies.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="container py-3">
+    <div class="text-center mb-5">
+        <span class="section-title">Nos Brocantes Passées</span>
+        <p class="text-muted" style="max-width:560px; margin:0 auto;">Retour en images sur nos précédentes éditions. Merci à tous les exposants et visiteurs !</p>
     </div>
-</section>
+    <div class="row g-4">
 
+        <div class="col-sm-6 col-lg-4">
+            <div class="card-brocante-passee">
+                <div class="card-brocante-img">
+                    <!-- Remplacer src par la vraie photo -->
+                    <img src="https://placehold.co/600x380/2C1F0E/F5C842?text=Photo+Brocante" alt="Brocante Mai 2025" class="w-100">
+                </div>
+                <div class="card-brocante-info">
+                    <div class="cb-date">🗓️ 18 Mai 2025</div>
+                    <div class="cb-titre">Brocante du Printemps</div>
+                    <div class="cb-lieu">📍 Place de bbsh</div>
+                    <div class="cb-stats">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+            <div class="card-brocante-passee">
+                <div class="card-brocante-img">
+                    <img src="https://placehold.co/600x380/2C1F0E/F5C842?text=Photo+Brocante" alt="Brocante Sept 2024" class="w-100">
+                </div>
+                <div class="card-brocante-info">
+                    <div class="cb-date">🗓️ 15 Septembre 2024</div>
+                    <div class="cb-titre">Vide-Grenier d'Automne</div>
+                    <div class="cb-lieu">📍 Place de bbsh</div>
+                    <div class="cb-stats">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+            <div class="card-brocante-passee">
+                <div class="card-brocante-img">
+                    <img src="https://placehold.co/600x380/2C1F0E/F5C842?text=Photo+Brocante" alt="Brocante Juin 2024" class="w-100">
+                </div>
+                <div class="card-brocante-info">
+                    <div class="cb-date">🗓️ 9 Juin 2024</div>
+                    <div class="cb-titre">Grande Brocante Annuelle</div>
+                    <div class="cb-lieu">📍 Place de bbsh</div>
+                    <div class="cb-stats">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
 <hr class="divider">
 
 <!-- SECTION BROCANTE -->
