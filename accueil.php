@@ -281,12 +281,20 @@
 </section>
 
 <!-- FOOTER -->
-<footer id="footer">
+<footer>
     <div class="container">
         <div class="row g-4 justify-content-center text-center">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <h6>Association Café Balbynien</h6>
-                <p style="font-size:.88rem; font-weight:300; line-height:1.8; color:#b0a07a; max-width: 400px; margin: 0 auto;">Un espace de partage, de convivialité et d'entraide au cœur de Bobigny.</p>
+                <p style="font-size:.88rem; font-weight:300; line-height:1.8; color:#b0a07a;">Un espace de partage, de convivialité et d'entraide au cœur de Bobigny.</p>
+            </div>
+            <div class="col-md-4">
+                <h6>Navigation</h6>
+                <ul class="list-unstyled" style="line-height:2;">
+                    <li><a href="accueil.php">Accueil</a></li>
+                    <li><a href="activites.html">Nos activités</a></li>
+                    <li><a href="brocantes.html">Brocantes</a></li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">© 2026 — Association Café Balbynien — Tous droits réservés</div>

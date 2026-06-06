@@ -56,7 +56,9 @@
         .section-soirees p { color: #b0a07a; font-weight: 300; line-height: 1.8; max-width: 580px; margin: 0 auto 2.5rem; text-align: center; }
 
         /* Carrousel brochures */
+        /* Carrousel brochures */
         .carousel-brochure .carousel-item { padding: 0 40px; }
+
         .brochure-placeholder {
             background: linear-gradient(160deg, #3d2d15, #5a3e25);
             border-radius: 16px;
@@ -71,15 +73,83 @@
             max-width: 320px;
             margin: 0 auto;
         }
-        .brochure-placeholder p { font-size: .85rem; color: rgba(245,200,66,.35); font-style: italic; margin-top: .8rem; font-family: 'Lato', sans-serif; }
-        .brochure-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 14px; }
-        .carousel-control-prev-icon, .carousel-control-next-icon { filter: none; background-image: none; }
-        .carousel-control-prev, .carousel-control-next { width: 40px; background: rgba(245,200,66,.15); border-radius: 50%; height: 40px; top: 50%; transform: translateY(-50%); opacity: 1; }
+
+        .brochure-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: none;
+            background-image: none;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background: rgba(245,200,66,.25);
+            backdrop-filter: blur(4px);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 1;
+            transition: all .3s ease;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background: rgba(245,200,66,.45);
+        }
+
         .carousel-control-prev { left: 0; }
         .carousel-control-next { right: 0; }
-        .carousel-control-prev::after, .carousel-control-next::after { content: ''; display: block; width: 12px; height: 12px; border-top: 3px solid var(--jaune); border-right: 3px solid var(--jaune); position: absolute; top: 50%; left: 50%; }
-        .carousel-control-prev::after { transform: translate(-30%, -50%) rotate(-135deg); }
-        .carousel-control-next::after { transform: translate(-70%, -50%) rotate(45deg); }
+
+        .carousel-control-prev::after,
+        .carousel-control-next::after {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-top: 3px solid var(--jaune);
+            border-right: 3px solid var(--jaune);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .carousel-control-prev::after {
+            transform: translate(-30%, -50%) rotate(-135deg);
+        }
+
+        .carousel-control-next::after {
+            transform: translate(-70%, -50%) rotate(45deg);
+        }
+
+        /* Nouveaux indicateurs */
+        .carousel-indicators {
+            bottom: -55px !important;
+        }
+
+        .carousel-indicators button {
+            width: 14px !important;
+            height: 14px !important;
+            border-radius: 50%;
+            background-color: var(--jaune) !important;
+            border: 2px solid #fff !important;
+            opacity: 0.5;
+            margin: 0 6px !important;
+            transition: all .3s ease;
+        }
+
+        .carousel-indicators button.active {
+            opacity: 1;
+            transform: scale(1.4);
+            box-shadow: 0 0 12px rgba(245,200,66,.8);
+        }
 
         /* ── VÉGÉTALISATION ── */
         .section-vegetal { background: var(--creme); padding: 70px 0; }
@@ -185,6 +255,30 @@
 
 <hr class="divider">
 
+<!-- PAELLA MAISON DE RETRAITE -->
+<section style="background: var(--creme); padding: 70px 0; overflow:hidden;" id="paella">
+    <div class="container">
+        <div class="text-center mb-4 fade-in">
+            <span class="section-title">🥘 Repas à la Maison de Retraite</span>
+        </div>
+        <div class="row align-items-center gy-4">
+            <div class="col-lg-6 fade-in">
+                <p style="color:var(--brun-doux); font-size:1.05rem; line-height:1.9; font-weight:300;">
+                    L'association prépare et offre un repas convivial — dont une délicieuse paella — aux résidents de la maison de retraite du Mousseau à Bobigny. Un moment de partage, de chaleur et de lien intergénérationnel qui fait toujours son effet !
+                </p>
+                <p style="color:var(--brun-doux); font-size:1.05rem; line-height:1.9; font-weight:300;" class="mt-3">
+                    Parce que personne ne devrait se sentir oublié, l'association tient à entretenir ce lien précieux avec les aînés de la cité.
+                </p>
+            </div>
+            <div class="col-lg-6 fade-in" style="overflow:hidden; border-radius:16px;">
+                <img src="image/paella.png" alt="Paella maison de retraite du Mousseau"
+                     style="width:70%; height:auto; display:block; border-radius:16px; margin:0 auto;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="divider">
 <!-- SOIRÉES CARITATIVES -->
 <section class="section-soirees" id="soirees">
     <div class="container position-relative">
@@ -201,22 +295,19 @@
 
                 <div class="carousel-item active">
                     <div class="brochure-placeholder">
-                        🎉
-                        <p>Brochure à insérer</p>
+                       <img src="image/brochure1.png">
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div class="brochure-placeholder">
-                        🎊
-                        <p>Brochure à insérer</p>
+                        <img src="image/brochure2.png">
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div class="brochure-placeholder">
-                        🎶
-                        <p>Brochure à insérer</p>
+                        <img src="image/brochure1.png">
                     </div>
                 </div>
 
@@ -225,59 +316,17 @@
             <button class="carousel-control-next" type="button" data-bs-target="#carouselSoirees" data-bs-slide="next"></button>
 
             <!-- Indicateurs -->
-            <div class="carousel-indicators" style="bottom:-30px;">
-                <button type="button" data-bs-target="#carouselSoirees" data-bs-slide-to="0" class="active" style="background:var(--jaune);"></button>
-                <button type="button" data-bs-target="#carouselSoirees" data-bs-slide-to="1" style="background:var(--jaune);"></button>
-                <button type="button" data-bs-target="#carouselSoirees" data-bs-slide-to="2" style="background:var(--jaune);"></button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselSoirees" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselSoirees" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselSoirees" data-bs-slide-to="2"></button>
             </div>
         </div>
     </div>
 </section>
-
-<hr class="divider">
 
 <!-- VÉGÉTALISATION -->
-<section class="section-vegetal" id="vegetation">
-    <div class="container">
-        <div class="text-center mb-4 fade-in">
-            <span class="section-title">🌱 Végétalisation de la Cité</span>
-        </div>
-        <div class="row align-items-center gy-4">
-            <div class="col-lg-6 fade-in">
-                <div class="vegetal-content">
-                    <p>L'association s'investit dans l'embellissement des espaces communs de la cité à travers des actions de plantation, de jardinage partagé et d'entretien des espaces verts.</p>
-                    <p class="mt-3">Ces initiatives permettent de créer du lien entre voisins, d'améliorer le cadre de vie et de sensibiliser petits et grands à l'environnement et à la nature en ville.</p>
-                </div>
-            </div>
-            <div class="col-lg-6 fade-in">
-                <div class="row g-3">
-                    <div class="col-4">
-                        <div class="vegetal-stat">
-                            <div class="vs-num">🌿</div>
-                            <div class="vs-label">Espaces végétalisés</div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="vegetal-stat">
-                            <div class="vs-num">👐</div>
-                            <div class="vs-label">Bénévoles mobilisés</div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="vegetal-stat">
-                            <div class="vs-num">🏙️</div>
-                            <div class="vs-label">Cité de Bobigny</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Placeholder photo végétalisation -->
-                <div class="mt-3" style="background:linear-gradient(160deg,#d4e8c2,#a8cc8a); border-radius:16px; height:200px; display:flex; align-items:center; justify-content:center; font-size:4rem; border:2px dashed rgba(44,31,14,.15);">
-                    🌱
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <hr class="divider">
 <!-- SPORT ENFANTS -->
@@ -344,10 +393,9 @@
             <div class="col-md-4">
                 <h6>Navigation</h6>
                 <ul class="list-unstyled" style="line-height:2;">
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="accueil.php">Accueil</a></li>
                     <li><a href="activites.html">Nos activités</a></li>
                     <li><a href="brocantes.html">Brocantes</a></li>
-                    <li><a href="presse.html">Presse</a></li>
                 </ul>
             </div>
         </div>
