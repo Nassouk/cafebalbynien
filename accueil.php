@@ -190,12 +190,12 @@
             </div>
             <div class="cp-body">
                 <span class="label-pill">🗓️ Prochaine Édition</span>
-                <h2>Grande Brocante — Juin 2026</h2>
+                <h2>Grande Brocante — Juillet 2026</h2>
                 <p>Notre rendez-vous annuel incontournable. Venez chiner, vendre et découvrir des trésors en tout genre dans une ambiance conviviale et festive.</p>
                 <div class="info-badges">
-                    <span class="info-badge">🗓️ 14 Juin 2026</span>
+                    <span class="info-badge">🗓️ 7 Juin 2026</span>
                     <span class="info-badge">🕘 9h – 18h</span>
-                    <span class="info-badge">📍 Place du village, Bobigny</span>
+                    <span class="info-badge">📍 Place Rabin-Arafat, Bobigny</span>
                     <span class="info-badge">🆓 Entrée libre</span>
                 </div>
                 <a href="brocantes.html" class="btn-jaune">Voir les infos →</a>
@@ -294,6 +294,7 @@
                     <li><a href="accueil.php">Accueil</a></li>
                     <li><a href="activites.html">Nos activités</a></li>
                     <li><a href="brocantes.html">Brocantes</a></li>
+                    <li> <a href="presse.html"> Presse</a> </li>
                 </ul>
             </div>
         </div>
