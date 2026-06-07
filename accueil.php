@@ -117,10 +117,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto gap-2">
-                <li class="nav-item"><a class="nav-link" href="accueil.php">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link active" href="accueil.php">Accueil</a></li>
                 <li class="nav-item"><a class="nav-link" href="activites.html">Activités</a></li>
-                <li class="nav-item"><a class="nav-link active" href="brocantes.html">Brocantes</a></li>
-                <li class="nav-item"><a class="nav-link" href="activites.html">Événements</a></li>
+                <li class="nav-item"><a class="nav-link " href="brocantes.html">Brocantes</a></li>
+                <li class="nav-item"><a class="nav-link" href="presse.html">Presse</a></li>
 
             </ul>
         </div>
@@ -219,9 +219,9 @@
             <!-- Catégorie 1 : Brocantes -->
             <div class="col-md-6 col-lg-4 fade-in">
                 <a href="brocantes.html" class="card-activite">
-                    <div class="card-icon">🏺</div>
+                    <div > <img src="image/imagebrocante.png"> </div>
                     <div class="card-body">
-                        <h5>Nos Brocantes</h5>
+                        <h5> 📦 Nos Brocantes</h5>
                         <p>Des moments de chine et de découvertes. Nos événements rassembleurs sont l'occasion idéale de faire de bonnes affaires dans une ambiance chaleureuse.</p>
                     </div>
                 </a>
@@ -229,10 +229,10 @@
 
             <!-- Catégorie 2 : Colis Alimentaires -->
             <div class="col-md-6 col-lg-4 fade-in">
-                <a href="#" class="card-activite">
-                    <div class="card-icon">📦</div>
+                <a href="activites.html#colis-alimentaire" class="card-activite">
+                    <div > <img src="image/colisalim.png" ></div>
                     <div class="card-body">
-                        <h5>Colis Alimentaires</h5>
+                        <h5> 🍱 Colis Alimentaires</h5>
                         <p>Une aide solidaire précieuse pour ceux qui en ont besoin. Nous agissons de manière concrète pour soutenir les familles de notre communauté.</p>
                     </div>
                 </a>
@@ -240,10 +240,10 @@
 
             <!-- Catégorie 3 : Soirées -->
             <div class="col-md-6 col-lg-4 fade-in">
-                <a href="#" class="card-activite">
-                    <div class="card-icon">🍽️</div>
+                <a href="activites.html#soiree-caritative"" class="card-activite">
+                    <div> <img src="image/soireerencontre.png">  </div>
                     <div class="card-body">
-                        <h5>Soirées &amp; Rencontres</h5>
+                        <h5> 🤝🏻 Soirées Rencontres</h5>
                         <p>Des événements festifs et caritatifs pensés pour nous rassembler, échanger, créer du lien social et soutenir nos actions communes.</p>
                     </div>
                 </a>

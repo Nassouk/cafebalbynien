@@ -202,9 +202,9 @@
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto gap-2">
                 <li class="nav-item"><a class="nav-link" href="accueil.php">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="activites.html">Activités</a></li>
-                <li class="nav-item"><a class="nav-link active" href="brocantes.html">Brocantes</a></li>
-                <li class="nav-item"><a class="nav-link" href="activites.html">Événements</a></li>
+                <li class="nav-item"><a class="nav-link active" href="activites.html">Activités</a></li>
+                <li class="nav-item"><a class="nav-link" href="brocantes.html">Brocantes</a></li>
+                <li class="nav-item"><a class="nav-link" href="presse.html">Presse</a></li>
 
             </ul>
         </div>
@@ -225,7 +225,7 @@
 <section class="section-colis" id="colis">
     <div class="container">
         <div class="text-center mb-2 fade-in">
-            <span class="section-title">📦 Colis Alimentaires</span>
+            <span class="section-title" id="colis-alimentaire">📦 Colis Alimentaires</span>
         </div>
         <p class="colis-intro fade-in">
             Chaque mois, l'association prépare et distribue des colis alimentaires aux familles dans le besoin à Bobigny. Pain de mie, lait, fruits, légumes, produits du quotidien… rien n'est laissé au hasard pour apporter un soutien concret et digne aux bénéficiaires.
@@ -283,7 +283,7 @@
 <section class="section-soirees" id="soirees">
     <div class="container position-relative">
         <div class="text-center mb-2 fade-in">
-            <span class="section-title light">🍽️ Soirées Caritatives</span>
+            <span class="section-title light" id="soiree-caritative">🍽️ Soirées Caritatives</span>
         </div>
         <p class="fade-in">
             L'association organise régulièrement des soirées conviviales et festives dont les bénéfices sont entièrement reversés à des causes solidaires locales. Moments de partage, de rencontre et de générosité.
@@ -325,10 +325,29 @@
     </div>
 </section>
 
-<!-- VÉGÉTALISATION -->
-
-
 <hr class="divider">
+
+<!-- TRI DES DÉCHETS -->
+<section style="background:#fff; padding:70px 0;" id="dechets">
+    <div class="container">
+        <div class="text-center mb-4 fade-in">
+            <span class="section-title">♻️ Tri des Déchets avec les Enfants</span>
+        </div>
+        <div class="row align-items-center gy-4">
+            <div class="col-lg-6 fade-in">
+                <p style="color:var(--brun-doux); font-size:1.05rem; line-height:1.9; font-weight:300;">
+                    L'association mobilise les jeunes de la cité pour des actions de ramassage et de tri des déchets. Équipés de pinces et de sacs, enfants et bénévoles prennent soin de leur environnement et apprennent les bons gestes pour un cadre de vie plus propre.
+                </p>
+                <p style="color:var(--brun-doux); font-size:1.05rem; line-height:1.9; font-weight:300;" class="mt-3">
+                    Une action citoyenne et éducative qui sensibilise les plus jeunes à la propreté et au respect de l'espace public.
+                </p>
+            </div>
+            <div class="col-lg-6 fade-in">
+                <img src="image/enfant.png" alt="Tri des déchets avec les enfants" style="width:100%; height:auto; border-radius:16px; display:block;">
+            </div>
+        </div>
+    </div>
+</section>
 <!-- SPORT ENFANTS -->
 <section class="section-sport" id="sport">
     <div class="container">
@@ -351,7 +370,7 @@
                 </div>
             </div>
             <div class="col-lg-6 order-lg-1 fade-in">
-                <img src="image/spot.PNG" alt="Sport pour les enfants" style="width:100%; height:auto; border-radius:16px;">
+                <img src="image/sport.png" alt="Sport pour les enfants" style="width:100%; height:auto; border-radius:16px;">
             </div>
         </div>
     </div>
