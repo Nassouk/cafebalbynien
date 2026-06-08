@@ -133,6 +133,35 @@
         });
     }
 </script>
+<script>
+    // Charge la brocante
+    fetch('/data/brocante.json')
+        .then(r => r.json())
+        .then(data => {
+            document.querySelector('.card-prochaine h2').textContent = data.titre;
+            document.querySelector('.card-prochaine p').textContent = data.description;
+            const badges = document.querySelectorAll('.info-badge');
+            if(badges[0]) badges[0].textContent = '🗓️ ' + data.date;
+            if(badges[1]) badges[1].textContent = '🕘 ' + data.horaires;
+            if(badges[2]) badges[2].textContent = '📍 ' + data.lieu;
+        });
+
+    // Charge le ticker
+    fetch('/data/ticker.json')
+        .then(r => r.json())
+        .then(data => {
+            const ticker = document.querySelector('.ticker');
+            if(ticker) ticker.textContent = data.messages.map(m => m.texte).join('   |   ');
+        });
+
+    // Charge le contact
+    fetch('/data/contact.json')
+        .then(r => r.json())
+        .then(data => {
+            const mails = document.querySelectorAll('a[href^="mailto"]');
+            mails.forEach(m => m.href = 'mailto:' + data.email);
+        });
+</script>
 <a href="#" id="btnTop">↑</a>
 <body>
 
