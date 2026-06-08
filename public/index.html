@@ -358,33 +358,34 @@
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 <script>
-    // Charge la brocante
     fetch('/data/brocante.json')
         .then(r => r.json())
         .then(data => {
+            console.log('JSON chargé:', data);
             document.querySelector('.card-prochaine h2').textContent = data.titre;
             document.querySelector('.card-prochaine p').textContent = data.description;
             const badges = document.querySelectorAll('.info-badge');
             if(badges[0]) badges[0].textContent = '🗓️ ' + data.date;
             if(badges[1]) badges[1].textContent = '🕘 ' + data.horaires;
             if(badges[2]) badges[2].textContent = '📍 ' + data.lieu;
-        });
+        })
+        .catch(err => console.error('Erreur:', err));
 
-    // Charge le ticker
     fetch('/data/ticker.json')
         .then(r => r.json())
         .then(data => {
+            console.log('Ticker chargé:', data);
             const ticker = document.querySelector('.ticker');
             if(ticker) ticker.textContent = data.messages.map(m => m.texte).join('   |   ');
-        });
+        })
+        .catch(err => console.error('Erreur ticker:', err));
 
-    // Charge le contact
     fetch('/data/contact.json')
         .then(r => r.json())
         .then(data => {
-            const mails = document.querySelectorAll('a[href^="mailto"]');
-            mails.forEach(m => m.href = 'mailto:' + data.email);
-        });
+            console.log('Contact chargé:', data);
+        })
+        .catch(err => console.error('Erreur contact:', err));
 </script>
 </body>
 </html>
