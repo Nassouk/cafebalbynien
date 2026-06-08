@@ -114,8 +114,38 @@
             transform: scale(1.3);
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #btnTop {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 42px;
+            height: 42px;
+            background: var(--jaune);
+            color: var(--brun);
+            text-decoration: none;
+            border-radius: 50%;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 40px;
+            z-index: 1000;
+            border: 1px solid var(--brun);
+            box-shadow: 0 2px 8px rgba(44,31,14,.15);
+            transition: all .3s ease;
+        }
+
+        #btnTop:hover {
+            background: var(--jaune-fonce);
+            transform: translateY(-2px);
+        }
+
     </style>
 </head>
+<a href="#" id="btnTop">↑</a>
 <body>
 
 <!-- NAVBAR -->
@@ -285,7 +315,7 @@
                     <img src="image/maire2.png" alt="Avec des élus locaux" style="width:100%; height:550px; object-fit:cover; object-position:center; display:block;">
                     <div style="padding:1rem 1.3rem; background:#fff;">
                         <div style="font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--brun-doux);">📍 Bobigny</div>
-                        <div style="font-family:'Playfair Display',serif; font-size:1rem; color:var(--brun); margin-top:.2rem;">Rencontre avec des élus locaux</div>
+                        <div style="font-family:'Playfair Display',serif; font-size:1rem; color:var(--brun); margin-top:.2rem;">Rencontre avec le maire et les élus locaux</div>
                     </div>
                 </div>
             </div>

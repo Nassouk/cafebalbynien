@@ -175,8 +175,39 @@
         /* Animations */
         .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s, transform .6s; }
         .fade-in.visible { opacity: 1; transform: none; }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #btnTop {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 42px;
+            height: 42px;
+            background: var(--jaune);
+            color: var(--brun);
+            text-decoration: none;
+            border-radius: 50%;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 40px;
+            z-index: 1000;
+            border: 1px solid var(--brun);
+            box-shadow: 0 2px 8px rgba(44,31,14,.15);
+            transition: all .3s ease;
+        }
+
+        #btnTop:hover {
+            background: var(--jaune-fonce);
+            transform: translateY(-2px);
+        }
+        }
     </style>
 </head>
+<a href="#" id="btnTop">↑</a>
 <body>
 
 <!-- NAVBAR -->
@@ -264,7 +295,7 @@
         <div class="row align-items-center gy-4">
             <div class="col-lg-6 fade-in">
                 <p style="color:var(--brun-doux); font-size:1.05rem; line-height:1.9; font-weight:300;">
-                    L'association prépare et offre un repas convivial — dont une délicieuse paella — aux résidents de la maison de retraite du Mousseau à Bobigny. Un moment de partage, de chaleur et de lien intergénérationnel qui fait toujours son effet !
+                    L'association prépare et offre un repas convivial dont une délicieuse paella  aux résidents de la maison de retraite du Mousseau à Bobigny. Un moment de partage, de chaleur et de lien intergénérationnel qui fait toujours son effet !
                 </p>
                 <p style="color:var(--brun-doux); font-size:1.05rem; line-height:1.9; font-weight:300;" class="mt-3">
                     Parce que personne ne devrait se sentir oublié, l'association tient à entretenir ce lien précieux avec les aînés de la cité.
@@ -283,9 +314,9 @@
 <section class="section-soirees" id="soirees">
     <div class="container position-relative">
         <div class="text-center mb-2 fade-in">
-            <span class="section-title light" id="soiree-caritative">🎉 Soirées Caritatives</span>
+            <span class="section-title light" id="soiree-caritative" >🎉 Soirées Caritatives</span>
         </div>
-        <p class="fade-in">
+        <p class="fade-in" >
             L'association organise régulièrement des soirées conviviales et festives avec des moments de partage, de rencontre et de générosité.
         </p>
 

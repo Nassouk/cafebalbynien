@@ -97,8 +97,38 @@
         /* Animations */
         .fade-in { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #btnTop {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 42px;
+            height: 42px;
+            background: var(--jaune);
+            color: var(--brun);
+            text-decoration: none;
+            border-radius: 50%;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 40px;
+            z-index: 1000;
+            border: 1px solid var(--brun);
+            box-shadow: 0 2px 8px rgba(44,31,14,.15);
+            transition: all .3s ease;
+        }
+
+        #btnTop:hover {
+            background: var(--jaune-fonce);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
+<a href="#" id="btnTop">↑</a>
 <body>
 
 <!-- NAVBAR -->
