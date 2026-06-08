@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "image"
+
+collections:
+  - name: "evenements"
+    label: "Événements"
+    files:
+      - label: "Prochains événements"
+        name: "evenements"
+        file: "data/evenements.json"
+        fields:
+          - label: "Événements"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Titre", name: "titre", widget: "string"}
+              - {label: "Date", name: "date", widget: "string"}
+              - {label: "Lieu", name: "lieu", widget: "string"}
