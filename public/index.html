@@ -362,7 +362,7 @@
     fetch('/data/brocante.json')
         .then(r => r.json())
         .then(data => {
-            document.querySelector('.card-prochaine h2').textContent = data.titre;
+            document.querySelec tor('.card-prochaine h2').textContent = data.titre;
             document.querySelector('.card-prochaine p').textContent = data.description;
             const badges = document.querySelectorAll('.info-badge');
             if(badges[0]) badges[0].textContent = '🗓️ ' + data.date;
