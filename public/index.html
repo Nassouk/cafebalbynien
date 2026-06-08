@@ -359,15 +359,12 @@
     fetch('/data/brocante.json')
         .then(r => r.json())
         .then(data => {
-            console.log('JSON chargé:', data);
-            document.querySelector('.card-prochaine h2').textContent = data.titre;
-            document.querySelector('.card-prochaine p').textContent = data.description;
-            const badges = document.querySelectorAll('.info-badge');
-            if(badges[0]) badges[0].textContent = '🗓️ ' + data.date;
-            if(badges[1]) badges[1].textContent = '🕘 ' + data.horaires;
-            if(badges[2]) badges[2].textContent = '📍 ' + data.lieu;
-        })
-        .catch(err => console.error('Erreur:', err));
+            document.getElementById('brocante-titre').textContent = data.titre;
+            document.getElementById('brocante-description').textContent = data.description;
+            document.getElementById('badge-date').textContent = '🗓️ ' + data.date;
+            document.getElementById('badge-horaires').textContent = '🕘 ' + data.horaires;
+            document.getElementById('badge-lieu').textContent = '📍 ' + data.lieu;
+        });
 
     fetch('/data/ticker.json')
         .then(r => r.json())
